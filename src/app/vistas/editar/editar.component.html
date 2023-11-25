@@ -1,0 +1,53 @@
+<app-menulateral></app-menulateral>
+<h3 class="tema">Editar Alumno</h3>
+
+<form [formGroup]="editarForm">
+  <div class="container">
+    <div class="group">
+      <label for="nombreCliente">Nombre:</label>
+      <input
+        type="text"
+        id="nombreCliente"
+        name="nombreCliente"
+        formControlName="idCliente"
+      />
+
+      <label for="cedula">Cédula:</label>
+      <input
+        type="text"
+        id="cedula"
+        name="cedula"
+        formControlName="categoria"
+      />
+
+      <label for="celular">Celular:</label>
+      <input
+        type="text"
+        id="celular"
+        name="celular"
+        formControlName="nombreCliente"
+      />
+    </div>
+
+    <div class="group">
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" />
+
+      <label for="edad">Edad:</label>
+      <input
+        type="text"
+        id="edad"
+        name="edad"
+        formControlName="apellidoCliente"
+      />
+
+      <label for="correo">Correo:</label>
+      <input type="text" id="correo" name="correo" />
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button class="save-button" type="submit">Guardar</button>
+    <button class="cancel-button" (click)="cancelarEdicion()">Cancelar</button>
+  </div>
+</form>

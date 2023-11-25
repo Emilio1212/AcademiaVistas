@@ -1,0 +1,44 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<app-menulateral></app-menulateral>
+<br />
+<br />
+<br />
+
+<div class="container">
+  <div id="filtro-container">
+    <input type="text" id="filtro-input" placeholder="Ingrese ID" />
+  </div>
+  <h3 class="tema">Admistrador de Horario</h3>
+
+  <button type="button" class="btn btn-primary" (click)="CrearHoorario()">
+    Crear Horario
+  </button>
+  <br />
+  <br />
+  <br />
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Opciones</th>
+        <th scope="col">idCliente</th>
+        <th scope="col">categoria</th>
+        <th scope="col">nombreCliente</th>
+        <th scope="col">apellidoCliente</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <select class="form-control">
+            <option>Opciones</option>
+            <option class="op" value="opcion1">Editar</option>
+            <option class="op" value="opcion2">Desabilitar</option>
+          </select>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

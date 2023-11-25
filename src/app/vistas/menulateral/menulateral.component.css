@@ -1,0 +1,108 @@
+img {
+  width: 160px;
+}
+.header {
+  height: 60px;
+  background: #34495e;
+  color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto; /* Empuja los elementos restantes hacia la derecha */
+}
+
+.user-info {
+  margin-left: auto; /* Empuja este elemento hacia la izquierda */
+  margin-right: 20px; /* Márgenes para espaciar el contenido */
+}
+
+.sidebar {
+  top: 60px;
+  width: 200px;
+  height: 900px;
+  background: #34495e;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+  #leftside-navigation {
+    ul,
+    ul ul {
+      margin: -2px 0 0;
+      padding: 0;
+    }
+    ul {
+      li {
+        height: 60px;
+        margin-bottom: 30px;
+        list-style-type: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        &.active {
+          & > a {
+            color: #1abc9c;
+          }
+          ul {
+            display: block;
+          }
+        }
+        a {
+          color: #aeb2b7;
+          text-decoration: none;
+          display: block;
+          padding: 18px 0 18px 25px;
+          font-size: 15px;
+          outline: 0;
+          -webkit-transition: all 200ms ease-in;
+          -moz-transition: all 200ms ease-in;
+          -o-transition: all 200ms ease-in;
+          -ms-transition: all 200ms ease-in;
+          transition: all 200ms ease-in;
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            color: red;
+          }
+          span {
+            display: inline-block;
+            color: white;
+          }
+          i {
+            width: 20px;
+            .fa-angle-left,
+            .fa-angle-right {
+              padding-top: 6px;
+              margin-left: 8px;
+            }
+          }
+        }
+      }
+    }
+    ul ul {
+      display: none;
+      li {
+        background: #23313f;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        border-bottom: none;
+        a {
+          font-size: 12px;
+          padding-top: 13px;
+          padding-bottom: 13px;
+          color: #aeb2b7;
+        }
+      }
+    }
+  }
+}
